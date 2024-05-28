@@ -1,5 +1,6 @@
 package com.kk.log;
 
+import org.slf4j.MDC;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,11 +12,7 @@ public class LogApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LogApplication.class, args);
-		log.trace("TRACE");
-		log.debug("DEBUG");
-		log.info("INFO");
-		log.warn("WARN");
-		log.error("ERROR");
+		log.info("안녕");
 	}
 
 }
